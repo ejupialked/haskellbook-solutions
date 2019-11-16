@@ -11,6 +11,8 @@ Write the `Eq` instance for the datatype provided.
 
     instance Eq TisAnInteger where
       (==) (TisAn x) (TisAn x') = x == x'
+      (==) _ _                  = False
+
     ```
 
 2.  
@@ -21,6 +23,7 @@ Write the `Eq` instance for the datatype provided.
 
     instance Eq TwoIntegers where
       (==) (Two x y) (Two x' y') = x == x' && y == y'
+      (==) _ _                 = False
     ```
 
 3.  
